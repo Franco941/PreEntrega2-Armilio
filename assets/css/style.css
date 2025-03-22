@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*   NORMALIZANDO ESTILOS   */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+/*   BARRA DE NAVEGACION   */
+nav {
+    background-color: #8053ea;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+header nav div a img{
+    width: 50px;
+    border-radius:50%;
+}
+
+
+header nav div ul li {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/*   CUERPO DE LA PAGINA   */
+#principal {
+    background-color: #eeeafd;;
+}
+/*   INICIO   */
+main article div img {
+    width: 50%;
+    border-radius: 50%;
+    box-shadow: 4px 10px 9px 1px;
+}
+
+.bi {
+    font-size: 50px;
+}
+
+main article div a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*   PROYECTOS   */
+
+.trabajos {
+    display: grid;
+    grid-template-areas: "proyecto1 proyecto2 proyecto3"
+                         "proyecto4 proyecto5 proyecto6";
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.proyecto1 {
+    grid-area: proyecto1;
+}
+
+.imagenProyectos {
+    width: 100%;
+    height: auto;
+}
+
+.proyecto2 {
+    grid-area: proyecto2;
+}
+
+.proyecto3 {
+    grid-area: proyecto3;
+}
+
+.proyecto4 {
+    grid-area: proyecto4;
+}
+
+.proyecto5 {
+    grid-area: proyecto5;
+}
+
+.proyecto6 {
+    grid-area: proyecto6;
+}
+
+/*   CONTACTO   */
+#contacto {
+    background-color: #eeeafd;
+    padding: 40px 0;
+}
+
+.section-contacto {
+    padding: 3px;
+    border-radius: 20px;
+    border: 10px solid #4b0082;;
+    width: 50% !important;
+    background-color: #eeeafd;
+    }
+
+.section__contacto__titulo {
+    text-align: center;
+}
+
+
+
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+label {
+    display: block;
+}
+
+.contacto-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input, textarea {
+
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 95%;
+}
+
+.botones {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #8053ea;
+    color: white;
+}
+
+button a {  
+    color: inherit;
+    text-decoration: none;
+}
+
+/*   PIE DE PAGINA   */
+footer {
+    background-color: #8053ea;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    margin-bottom: 0px !important;
+}
+
+/*   MODIFICACIONES PARA TODAS LAS PAGINAS   */
+
+h1,h3,h4 {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    border-bottom: 2px solid #8053ea;
+    margin: 20px 0 !important;
+}
+
+/*   MEDIA QUERY PARA PAGINA PRINCIPAL   */
+@media (max-width: 768px) {
+    .trabajos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagenProyectos {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .trabajos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagenProyectos {
+        width: 100%;
+    }
+}
+
+
+
+/*   MEDIA QUERY PARA PAGINA CONTACTOS   */
+@media (max-width: 768px) {
+    .section-contacto {
+        width: 85% !important;
+    }
+}
+
+@media (max-width: 480px) {
+        .section-contacto {
+            width: 90% !important;
+        }
+}
