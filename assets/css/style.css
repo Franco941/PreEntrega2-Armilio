@@ -15,10 +15,9 @@ nav {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-
-header nav div a img{
+header nav div a img {
     width: 50px;
-    border-radius:50%;
+    border-radius: 50%;
 }
 
 
@@ -29,8 +28,10 @@ header nav div ul li {
 
 /*   CUERPO DE LA PAGINA   */
 #principal {
-    background-color: #eeeafd;;
+    background-color: #eeeafd;
+    ;
 }
+
 /*   INICIO   */
 main article div img {
     width: 50%;
@@ -52,7 +53,7 @@ main article div a {
 .trabajos {
     display: grid;
     grid-template-areas: "proyecto1 proyecto2 proyecto3"
-                         "proyecto4 proyecto5 proyecto6";
+        "proyecto4 proyecto5 proyecto6";
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -92,13 +93,14 @@ main article div a {
     padding: 40px 0;
 }
 
-.section-contacto {
+.section__contacto {
     padding: 3px;
     border-radius: 20px;
-    border: 10px solid #4b0082;;
+    border: 10px solid #4b0082;
+    ;
     width: 50% !important;
     background-color: #eeeafd;
-    }
+}
 
 .section__contacto__titulo {
     text-align: center;
@@ -126,7 +128,8 @@ label {
     align-items: center;
 }
 
-input, textarea {
+input,
+textarea {
 
     padding: 10px;
     border-radius: 5px;
@@ -143,7 +146,7 @@ input, textarea {
     color: white;
 }
 
-button a {  
+button a {
     color: inherit;
     text-decoration: none;
 }
@@ -165,11 +168,14 @@ footer p {
 
 /*   MODIFICACIONES PARA TODAS LAS PAGINAS   */
 
-h1,h3,h4 {
+h1,
+h3,
+h4 {
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     border-bottom: 2px solid #8053ea;
     margin: 20px 0 !important;
+    font-weight: bold !important;
 }
 
 /*   MEDIA QUERY PARA PAGINA PRINCIPAL   */
@@ -199,13 +205,13 @@ h1,h3,h4 {
 
 /*   MEDIA QUERY PARA PAGINA CONTACTOS   */
 @media (max-width: 768px) {
-    .section-contacto {
+    .section__contacto {
         width: 85% !important;
     }
 }
 
 @media (max-width: 480px) {
-        .section-contacto {
-            width: 90% !important;
-        }
+    .section__contacto {
+        width: 90% !important;
+    }
 }
