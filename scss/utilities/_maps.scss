@@ -1,0 +1,13 @@
+@use "variables" as *;
+
+$colors: (
+    primario: $color-primario,
+    secundario: $color-secundario,
+    terciario: $color-terciario
+);
+
+$fuentes: (
+    primario: $fuente-primario,
+    secundario: $fuente-secundario,
+    terciario: $fuente-terciario
+);

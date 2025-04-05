@@ -1,0 +1,22 @@
+%flex-columna-centrada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-columna {
+    display: flex;
+    flex-direction: column;
+}
+
+%zoom-proyectos {
+    transform: scale(1.05);
+    z-index: 1;
+}

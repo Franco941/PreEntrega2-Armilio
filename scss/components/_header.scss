@@ -1,0 +1,26 @@
+@use "../utilities/variables" as *;
+
+header {
+    nav {
+        background-color: $color-primario;
+        background-image: linear-gradient(to right, $color-primario , $color-secundario);
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+
+        div {
+            a {
+                img {
+                    width: 50px;
+                    border-radius: 50%;
+                }
+            }
+
+            ul {
+                li {
+                    font-weight: bold;
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@use "../utilities/mixin" as *;
+
+@media (max-width: 768px) {
+
+  // Página Inicio
+  .trabajos {
+    @include flex-columna;
+  }
+
+  .bi {
+    font-size: 30px;
+  }
+
+  // Pagina Proyecto
+  .imagenProyectos {
+    @include ancho($porcentaje: 70%);
+  }
+
+  // Página Contacto
+  .section__contacto.container {
+    @include ancho($porcentaje: 95% !important);
+  }
+}
+
+@media (max-width: 480px) {
+
+  // Página Inicio
+  .trabajos {
+    @include flex-columna;
+  }
+
+  .bi {
+    font-size: 20px;
+  }
+
+  // Página Proyecto
+  .imagenProyectos {
+    @include ancho($porcentaje: 100%);
+  }
+
+  // Página Contacto
+  .section__contacto.container {
+    @include ancho($porcentaje: 90% !important);
+  }
+}

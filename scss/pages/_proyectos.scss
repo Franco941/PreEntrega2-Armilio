@@ -1,0 +1,63 @@
+@use "../utilities/extends" as *;
+
+.trabajos {
+    display: grid;
+    grid-template-areas: "proyecto1 proyecto2 proyecto3"
+        "proyecto4 proyecto5 proyecto6";
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.imagenProyectos {
+    width: 100%;
+    height: auto;
+}
+
+.proyecto1 {
+    grid-area: proyecto1;
+
+    &:hover {
+        @extend %zoom-proyectos;
+    }
+
+}
+
+.proyecto2 {
+    grid-area: proyecto2;
+
+    &:hover {
+        @extend %zoom-proyectos;
+    }
+}
+
+.proyecto3 {
+    grid-area: proyecto3;
+
+    &:hover {
+        @extend %zoom-proyectos;
+    }
+}
+
+.proyecto4 {
+    grid-area: proyecto4;
+
+    &:hover {
+        @extend %zoom-proyectos;
+    }
+}
+
+.proyecto5 {
+    grid-area: proyecto5;
+
+    &:hover {
+        @extend %zoom-proyectos;
+    }
+}
+
+.proyecto6 {
+    grid-area: proyecto6;
+
+    &:hover {
+        @extend %zoom-proyectos;
+    }
+}

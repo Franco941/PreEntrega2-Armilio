@@ -1,0 +1,45 @@
+@use "../utilities/mixin" as *;
+@use "../utilities/animations" as *;
+@use "../utilities/extends" as *;
+
+#principal {
+    padding-bottom: 30px;
+    flex: 1;
+}
+
+#habilidades {
+    margin-top: 30px;
+}
+
+main {
+    article {
+        div {
+            img {
+                @include ancho ($porcentaje: 50%);
+                border-radius: 50%;
+                box-shadow: 4px 10px 9px 1px;
+                opacity: 0;
+                animation: desvanecerse 1.5s ease-out forwards;
+            }
+
+            &:hover {
+                @include zoom-imagen ($escala: 1.01);
+            }
+
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            p {
+                opacity: 0;
+                animation: deslizar 1s ease-out forwards;
+            }
+        }
+    }
+}
+
+.bi {
+    font-size: 50px;
+}

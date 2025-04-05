@@ -1,0 +1,15 @@
+@use "../utilities/extends" as *;
+@use "../utilities/variables" as *;
+
+footer {
+    background-color: $color-primario;
+    background-image: linear-gradient(to right, $color-primario , $color-secundario);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    p {
+        @extend %flex-centrado;
+        height: 3em;
+        margin-bottom: 0px !important;
+    }
+}

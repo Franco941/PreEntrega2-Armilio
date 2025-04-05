@@ -1,0 +1,39 @@
+@use "variables" as *;
+
+@mixin reset-css {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fuente-primario;
+    text-align: center;
+}
+
+
+
+/* TITULOS Y SUBTITULOS */
+
+@mixin titulos {
+    font-family: $fuente-secundario;
+    border-bottom: 2px solid $color-primario;
+    text-transform: $mayusculas;
+    padding: 20px 0 !important;
+    font-weight: bold !important;
+}
+
+@mixin flex-columna {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin altura ($porcentaje) {
+    height: $porcentaje;
+}
+
+@mixin ancho ($porcentaje) {
+    width: $porcentaje;
+}
+
+@mixin zoom-imagen ($escala) {
+    transform: scale($escala);
+    z-index: 1;
+}
